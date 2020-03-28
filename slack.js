@@ -7,7 +7,9 @@ const namespaces = require('./data/namespaces')
 
 app.use(express.static(__dirname + '/public'))
 
-app.get('/', function (req, res) { res.redirect('/chat.html') });
+app.get('/', function (req, res) {
+    res.redirect('/chat.html')
+});
 
 const port = process.env.PORT || 9000
 
