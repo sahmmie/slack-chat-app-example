@@ -2,7 +2,6 @@ function joinNs(endpoint) {
     if (nsSocket || !username) {
         // check to see if nsSocket is actually a socket
         nsSocket.close();
-        username = getUsername()
     }
 
     let url = `http://localhost:9000${endpoint}`
