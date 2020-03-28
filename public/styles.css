@@ -125,3 +125,10 @@ input {
     display: flex;
     align-items: stretch;
 }
+
+#messages li:nth-child(odd) {
+    padding: 5px 10px;
+    display: flex;
+    align-items: stretch;
+    background: #eee;
+}
