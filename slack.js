@@ -11,7 +11,8 @@ app.get('/', function (req, res) {
     res.redirect('/chat.html')
 });
 
-const port = process.env.PORT || 9000
+// const port = process.env.PORT || 9000
+const port = process.env.PORT
 
 const expressServer = app.listen(port, () => {
     console.log(`Server start at port ${port}`)
