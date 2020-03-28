@@ -1,6 +1,6 @@
 const username = prompt('what is your username?', `${getUsername()}`)
 
-const socket = io('http://localhost:9000', {
+const socket = io('https://slack-demo-sahmmie.herokuapp.com', {
     query: {
         username: username
     }

@@ -4,7 +4,7 @@ function joinNs(endpoint) {
         nsSocket.close();
     }
 
-    let url = `http://localhost:9000${endpoint}`
+    let url = `https://slack-demo-sahmmie.herokuapp.com${endpoint}`
     nsSocket = io(url)
     nsSocket.on('nsRoomLoad', (nsRooms) => {
         let roomList = document.querySelector('.room-list')

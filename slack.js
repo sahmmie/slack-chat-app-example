@@ -12,7 +12,7 @@ app.get('/', function (req, res) {
 });
 
 // const port = process.env.PORT || 9000
-const port = process.env.PORT
+const port = process.env.PORT || 9000
 
 const expressServer = app.listen(port, () => {
     console.log(`Server start at port ${port}`)
